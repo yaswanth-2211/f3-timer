@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-wrap: nowrap;
+}
+
+html{
+    background-color: #131313;
+}
+
+header {
+    height: 10vh;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    color: white;
+}
+
+.set-timer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    align-items: center;
+    justify-content: start;
+
+    width: 100%;
+
+    padding-block: 5px 32px;
+}
+
+.timer-card {
+    /* width: 50%;
+    min-width: fit-content; */
+
+    width: 50%;
+
+    min-width: 428px;
+
+    height: 16.5vh;
+    min-height: 60px;
+
+    border-radius: 24px;
+    padding-inline: 14px;
+
+    overflow: hidden;
+
+    background-color: #34344a;
+
+}
+
+.card-inner-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.card-title{
+    color: #fff;
+    text-wrap: nowrap;
+}
+
+.time-up-banner{
+    font-size: 38px;
+    color: #34344a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.timer-value-container {
+    width: 280px;
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hours, .minutes, .seconds{
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border: none;
+
+    color: #fff;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: none;
+}
+.separator {
+    color: #fff;
+}
+input[type="number"]::placeholder {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 200%;
+}
+.hours, .minutes, .seconds {
+    font-size: 24px;
+    color: #fff;    
+    line-height: 200%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.separator {
+    content: ":";
+}
+button {
+    height: 30px;
+    min-width: 80px;
+
+    border-radius: 14px;
+    border: none;
+    background-color: #f0f757;
+    color: #34344a;
+
+    cursor: pointer;
+}
+
+
+
+.current-timers-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 18px;
+
+    >.current-timers-heading {
+        /* min-width: 30%; */
+        background-color: #313131;
+        color: white;
+
+        padding-inline: 50px !important;
+        padding-block: 8px;
+
+        border-radius: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.current-timers-placeholder{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+
+    font-weight: 100;
+
+}
+
+.timer-up{
+    background-color: yellow;    
+
+    >.card-inner-container >button {
+        background-color: #34344a !important;
+        color: yellow !important;
+    }
+}
+
+.hide{
+    display: none;
+}
